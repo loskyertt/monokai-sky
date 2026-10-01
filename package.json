@@ -9,7 +9,7 @@
     "url": "https://github.com/loskyertt/monokai-sky.git"
   },
   "engines": {
-    "vscode": "^1.120.0"
+    "vscode": "^1.100.0"
   },
   "categories": [
     "Themes"
