@@ -1,0 +1,21 @@
+{
+  "name": "monokai-sky",
+  "displayName": "Monokai Sky",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.138.0"
+  },
+  "categories": [
+    "Themes"
+  ],
+  "contributes": {
+    "themes": [
+      {
+        "label": "Monokai Sky",
+        "uiTheme": "vs-dark",
+        "path": "./themes/Monokai Sky-color-theme.json"
+      }
+    ]
+  }
+}
