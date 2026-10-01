@@ -17,7 +17,7 @@
   "contributes": {
     "themes": [
       {
-        "label": "theme",
+        "label": "Monokai Sky",
         "uiTheme": "vs-dark",
         "path": "./themes/Monokai Sky-color-theme.json"
       }
