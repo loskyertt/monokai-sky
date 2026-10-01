@@ -1,7 +1,8 @@
 {
   "name": "monokai-sky",
   "displayName": "Monokai Sky",
-  "description": "A Monokai dark theme designed by loskyertt.",
+  "publisher": "loskyertt",
+  "description": "A customized Monokai-inspired dark theme.",
   "version": "0.0.1",
   "engines": {
     "vscode": "^1.120.0"
