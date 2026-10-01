@@ -4,6 +4,10 @@
   "publisher": "loskyertt",
   "description": "A customized Monokai-inspired dark theme.",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/loskyertt/monokai-sky.git"
+  },
   "engines": {
     "vscode": "^1.120.0"
   },
