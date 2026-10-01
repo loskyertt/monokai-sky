@@ -460,6 +460,7 @@
 		"sideBar.foreground": "#948a8b",
 		"sideBarSectionHeader.background": "#211c1c",
 		"sideBarSectionHeader.foreground": "#72696a",
+		"sideBarSectionHeader.border": "#444444",
 		"sideBarStickyScroll.background": "#211c1c",
 		"sideBarStickyScroll.border": "#403838",
 		"sideBarStickyScroll.shadow": "#211c1c",
