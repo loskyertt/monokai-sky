@@ -602,6 +602,13 @@
 	},
 	"tokenColors": [
 		{
+			"name": "Spectrum default text (TEXT)",
+			"settings": {
+				"foreground": "#F7F1FF",
+				"fontStyle": ""
+			}
+		},
+		{
 			"scope": [
 				"comment",
 				"comment markup.underline.link",
@@ -663,7 +670,7 @@
 		{
 			"scope": "constant.other",
 			"settings": {
-				"foreground": "#F7F1FF"
+				"foreground": "#948AE3"
 			}
 		},
 		{
@@ -1440,7 +1447,7 @@
 		{
 			"scope": "string.unquoted.label",
 			"settings": {
-				"foreground": "#F7F1FF"
+				"foreground": "#7BD88F"
 			}
 		},
 		{
@@ -1801,9 +1808,13 @@
 			}
 		},
 		{
-			"scope": "entity.name.type.typedef",
+			"scope": [
+				"entity.name.type.typedef.c",
+				"entity.name.type.typedef.cpp"
+			],
 			"settings": {
-				"foreground": "#FFAF37"
+				"foreground": "#FFAF37",
+				"fontStyle": ""
 			}
 		},
 		{
@@ -2154,6 +2165,109 @@
 			"settings": {
 				"foreground": "#F7F1FF"
 			}
+		},
+		{
+			"name": "Spectrum constants (DEFAULT_CONSTANT)",
+			"scope": ["entity.name.constant", "variable.other.constant", "constant.other.caps", "constant.other.java", "constant.other.php"],
+			"settings": { "foreground": "#948AE3", "fontStyle": "italic" }
+		},
+		{
+			"name": "Spectrum invalid escapes (DEFAULT_INVALID_STRING_ESCAPE)",
+			"scope": "invalid.illegal.character.escape",
+			"settings": { "foreground": "#FC618D", "fontStyle": "" }
+		},
+		{
+			"name": "Spectrum C/C++ struct and class names (OC.STRUCT_LIKE)",
+			"scope": ["entity.name.type.class.c", "entity.name.type.class.cpp", "entity.name.type.struct.c", "entity.name.type.struct.cpp", "entity.name.type.union.c", "entity.name.type.union.cpp"],
+			"settings": { "foreground": "#5AD4E6", "fontStyle": "bold" }
+		},
+		{
+			"name": "Spectrum C/C++ struct fields (OC.STRUCT_FIELD)",
+			"scope": ["variable.other.member.c", "variable.other.member.cpp", "variable.other.property.c", "variable.other.property.cpp"],
+			"settings": { "foreground": "#FD9353", "fontStyle": "" }
+		},
+		{
+			"name": "Spectrum C/C++ static fields (DEFAULT_STATIC_FIELD)",
+			"scope": ["variable.other.member.static.c", "variable.other.member.static.cpp", "variable.other.property.static.c", "variable.other.property.static.cpp"],
+			"settings": { "foreground": "#948AE3", "fontStyle": "" }
+		},
+		{
+			"name": "Spectrum Go type references (GO_TYPE_REFERENCE)",
+			"scope": ["entity.name.type.go", "support.type.go"],
+			"settings": { "foreground": "#948AE3", "fontStyle": "" }
+		},
+		{
+			"name": "Spectrum Go parameters and receivers",
+			"scope": "variable.parameter.go",
+			"settings": { "foreground": "#FD9353", "fontStyle": "" }
+		},
+		{
+			"scope": "variable.parameter.receiver.go",
+			"settings": { "foreground": "#7BD88F", "fontStyle": "" }
+		},
+		{
+			"name": "Spectrum Rust enums and variants",
+			"scope": ["entity.name.type.enum.rust", "entity.name.type.variant.rust", "entity.name.type.enum.variant.rust", "variable.other.enummember.rust"],
+			"settings": { "foreground": "#948AE3", "fontStyle": "italic" }
+		},
+		{
+			"name": "Spectrum Rust type aliases and parameters",
+			"scope": "entity.name.type.typedef.rust",
+			"settings": { "foreground": "#5AD4E6", "fontStyle": "italic" }
+		},
+		{
+			"scope": "entity.name.type.parameter.rust",
+			"settings": { "foreground": "#FD9353", "fontStyle": "" }
+		},
+		{
+			"name": "Spectrum Rust documentation code (org.rust.DOC_CODE)",
+			"scope": ["comment.block.documentation.rust markup.raw", "comment.line.documentation.rust markup.raw"],
+			"settings": { "foreground": "#8B888F", "fontStyle": "" }
+		},
+		{
+			"name": "Spectrum CSS property values (CSS.PROPERTY_VALUE)",
+			"scope": "support.constant.property-value.css",
+			"settings": { "foreground": "#5AD4E6", "fontStyle": "" }
+		},
+		{
+			"scope": "constant.other.custom-property.css",
+			"settings": { "foreground": "#948AE3", "fontStyle": "" }
+		},
+		{
+			"name": "Spectrum Sass interpolation (SASS_INTERPOLATION)",
+			"scope": ["punctuation.section.interpolation.begin.scss", "punctuation.section.interpolation.end.scss", "punctuation.section.interpolation.begin.sass", "punctuation.section.interpolation.end.sass"],
+			"settings": { "foreground": "#8B888F", "fontStyle": "" }
+		},
+		{
+			"name": "Spectrum Ruby regexp and heredoc",
+			"scope": "string.regexp.ruby",
+			"settings": { "foreground": "#FC618D", "fontStyle": "" }
+		},
+		{
+			"scope": ["string.unquoted.heredoc.ruby punctuation.definition.string", "entity.name.tag.heredoc.ruby"],
+			"settings": { "foreground": "#5AD4E6", "fontStyle": "" }
+		},
+		{
+			"name": "Spectrum shell shebang and heredoc markers",
+			"scope": ["comment.line.shebang", "punctuation.definition.backtick.shell"],
+			"settings": { "foreground": "#8B888F", "fontStyle": "" }
+		},
+		{
+			"scope": ["entity.name.tag.heredoc.shell", "punctuation.definition.string.heredoc.delimiter.shell"],
+			"settings": { "foreground": "#948AE3", "fontStyle": "" }
+		},
+		{
+			"name": "Spectrum regexp operators and groups",
+			"scope": ["keyword.operator.quantifier.regexp", "keyword.operator.or.regexp", "keyword.control.anchor.regexp", "storage.modifier.regexp"],
+			"settings": { "foreground": "#FC618D", "fontStyle": "" }
+		},
+		{
+			"scope": ["punctuation.definition.group.regexp", "punctuation.definition.character-class.regexp"],
+			"settings": { "foreground": "#8B888F", "fontStyle": "" }
+		},
+		{
+			"scope": "entity.name.section.group.regexp",
+			"settings": { "foreground": "#7BD88F", "fontStyle": "" }
 		}
 	]
 }
