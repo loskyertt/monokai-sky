@@ -3,7 +3,7 @@
   "displayName": "Monokai Sky",
   "publisher": "loskyertt",
   "description": "A customized Monokai-inspired dark theme.",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "repository": {
     "type": "git",
     "url": "https://github.com/loskyertt/monokai-sky.git"
@@ -17,9 +17,14 @@
   "contributes": {
     "themes": [
       {
-        "label": "Monokai Sky",
+        "label": "Monokai Sky(Classic)",
+        "uiTheme": "vs",
+        "path": "./themes/Monokai.json"
+      },
+      {
+        "label": "Monokai Sky(Ristretto)",
         "uiTheme": "vs-dark",
-        "path": "./themes/Monokai Sky-color-theme.json"
+        "path": "./themes/Monokai-Ristretto.json"
       }
     ]
   }
